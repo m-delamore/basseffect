@@ -1,0 +1,660 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3233DLR1V"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-H3233DLR1V');
+		</script>
+		<title>Aurora by Muhsen Delamore</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Aurora Development Journey</a></li>
+							<li><a href="#brief">Project Intro</a></li>
+							<li><a href="#leveldesign">Level Creation</a></li>
+							<li><a href="#combatdesign">Combat and Gameplay</a></li>
+							<li><a href="#hitreact">Hit React Animation</a></li>
+							<li><a href="#enemyspawn">Enemy Spawn Manager</a></li>
+							<li><a href="#dash">Dash Ability</a></li>
+							<li><a href="#blast">Blast Ability</a></li>
+							<li><a href="#headgears">Headgears</a></li>
+							<li><a href="#lessons">Lessons Learnt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Spell Check on Client contenteditable="true" spellcheck="true" -->
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Aurora's Development Journey</h1>
+							<p>Only some of the features in the game demo are described in this page. I will gladly answer any questions about the other features in interviews. 😉</p>
+							<p style="font-family: Arial, Helvetica, sans serif; font-size: 0.75em; font-color: #555555;">This page is <strong>NOT</strong> optimized for mobile viewing. Sorry.</p>
+							<ul class="actions">
+								<li><a href="../index.html" class="button scrolly">Back to Aurora Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+				<!-- One -->
+					<section id="brief" class="wrapper style2 spotlights">
+						<section>
+							<a href="images/aurora-ue4.png" class="image"><img src="images/aurora-ue4.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Intention</h2>
+									<p>I developed this demo to demo-n-strate my Unreal Engine capabilities. While I have ensured the basic features of a simple 3rd-person melee combat game is to be executed well, 
+										I brought on more focus to <strong>sequences and animation</strong>, as I believed cinematics is my thing and is fun to do.</p>
+									<p>This project actually started in Unreal Engine 4.6. When I picked it up again in Oct 2022, I successfully converted it to Unreal Engine 5.0. 
+										<!-- At that point, the only features present was sword collision on enemies and Move To task for its AI navigation.-->
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="" class="image"><img src="images/woman-curious.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Inspiration</h2>
+									<p>For avid gamers out there, can you guess the name of the game from which many elements in this demo is based on? 
+										It is a popular game which I like a lot but does not fall into my top 10 category.
+										To be honest, I was unaware of the similarities of some of my design decisions at first... until I recently played it again. 
+										Did the unconscious part of me somehow influenced the inspirations? Is my keyboard an Altered item?
+									</p>
+									<p>Hint: The game was developed by Remedy Entertainment. 😄</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="images/aurora-ue4.png" class="image"><img src="images/Aurora.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Goal</h2>
+									<p>At conception stage, I was browsing through all of the assets that came with the Paragon packs and found that there were really eye-catching and interesting materials, animation and special effects. It got me hyped up.</p>
+									<p>So I picked up the project again with a goal in mind - to develop as many features as I can within a self-stipulated time, so I can use most, if not all, of the animation and special effects provided.
+										In essence, primarily I want the <strong>animation provided to <u>drive</u> the gameplay</strong> and cinematics in a creative way.</p>
+									<p>This project turned out to be more of a Paragon Hero appreciation demo. 😄</p>
+									
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="images/aurora-face.jpg" class="image"><img src="images/aurora-face.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>But Why Aurora?</h2>
+									<p>I came across this Hero character in the UE Marketplace and know for certain I would want to showcase my Unreal capabilities with her.
+										Also, I like all things Aurora, the magical waves in the sky of Iceland, the beloved Norwegian singer, sleeping...</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<!-- <a href="images/aurora-face.jpg" class="image"><img src="" alt="" data-position="top center" /></a> -->
+							<div class="content">
+								<div class="inner">
+									<h2>Commit History</h2>
+									<p>It is nerve-wrecking to show my commits for this project, as my programming convention flaws will show. 😅
+										But nonetheless, I think it is only appropriate to do so for an apsiring Unreal Developer.</p>
+									<p>These are commits from the start of the project up until the project is cleaned and ready for packaging. Subsequent fixes or changes are in a different repository.
+									<p style="color: dodgerblue; text-decoration: underline;"><a href="https://bitbucket.org/delamorean/auroradev/commits/">Aurora Project Commit History</a></p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="leveldesign" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Level Creation</h2>
+							<p>The level was created with assets from the Paragon Props pack in the UE Marketplace. It is heavily inspired by the Bridge sub-level in Niflheim from God of War (2018) and its sequel.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Inspiration</h3>
+									<a href="images/God of War_NiflheimBridge1.jpg" class="image"><img src="images/God of War_NiflheimBridge1.jpg" alt=""/></a>
+									<p>The image above is a screenshot from God of War (2018), showing the Niflheim bridge.</p>
+									<a href="images/Level.png" class="image"><img src="images/Level.png" alt="" /></a>
+									<p>Completed static assets placement of the level. No blocking was initially done prior to this.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Custom Meshes</h3>
+									<p>There were tiling meshes in the level which I created from scratch using Maya 2020.
+										<a href="images/Trim_BaseStairs.png" class="image"><img src="images/Trim_BaseStairs.png" alt="" /></a>
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="combatdesign" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Combat and Gameplay Features</h2>
+							<p>I wanted to showcase a simple melee combat system with 2 abilities. So the demo has only melee-type enemies.
+								In the conception of the project, I wanted to add a ranged enemy type but discarded that as I wanted to finish my project within the time I stipulated.
+								I will create this in my next project, hopefully.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Aurora</h3>
+									<p><ul>
+										<li>Aurora has combo attacks, which consists of 3 animation. They came pre-configured in Blueprint but I converted them to C++, because I wanted to add more stuff to it.</li>
+										<li>Aurora has 2 abilities. Each ability call consumes a certain amount of Energy from her Energy pool, which is represented by the yellow bar at the top of the screen.</li>
+										<ul style="list-style-type: circle;">
+											<li>Notice that this bar is separated into 2 parts (there is a gap).</li>
+											<li>If Aurora's Energy pool is completely depleted after an ability call, she will go into the Exhausted state, in which she will not be able to move, and becomes vulnerable to attacks.</li>
+											<li>During the time she is in the Exhausted state, she will be recovering Energy (the only function that uses her own Actor Tick). The Energy bar will slowly replenish by itself over a certain duration.</li>
+											<li>After it fills up only the first portion of the bar, she will recover, be able to move and stops replenishing.</li>
+											<li>The Aurora character class has Energy states, that determines her animation and controls.</li>
+										</ul>
+										<li>Aurora can pick up Health or Energy fragments, spawned from defeated enemies, to replenish her Health and Energy.</li>
+									</ul></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Melee Enemies</h3>
+									<p><ul>
+										<li>Hitting an enemy will cancel any attack animation it is currently playing. However, this does not apply to the Aurora character.</li>
+											<ul style="list-style-type: circle;">
+												<li>I pulled out the Interrupted pin off the animation node to finish its BT Task, leaving it to <strong>immediately</strong> play the Hit React animation.</li>
+												<li>For Aurora, her class has the Movement states. I placed a conditional such that she will not react to being hit while she is attacking, thus not canceling her attack animation.</li>
+												<li>This gives players way more advantage. But as I said in the main page, this is intended.</li>
+											</ul>
+										<li>Enemy should have a small delay between attacks.</li>
+											<ul style="list-style-type: circle;">
+												<li>They were chaotically dangerous without it. Their attack animations are pretty fast compared to Aurora's default one.</li>
+											</ul>
+										<li>Enemies have a limited sight detection range. If they do not see Aurora within a certain radius (currently set at 500m), they will wander about. This is controlled in its AI Behavior Tree.</li>
+										<li>All melee enemies (not the End Game Boss though) will enter Stun state whenever they are hit by any of Aurora's abilities. Melee enemies have movement states that determine the animation and AI Behavior.</li>
+										<li>There are 2 melee enemy variation. The stronger one (which can only be spawned at the upper part of the level) was a child of the base Melee Enemy class.</li>
+									</ul></p>
+									<p>
+										<h4>Enemy Animation</h4>
+										<ul>
+											<li>Each melee enemy has 2 swords but it can swing them in a variety of ways - one sword only, either with its left or right arm first, or both swords at the same time. 
+												Furthermore, there are a few variation for each way. Which animation to play is random.</li>
+											<li>There are also 5 different death animation for this enemy. The animation to play depends on what killed it and how, but there is a 35% chance of playing the "kneeling"
+												if it was killed by Aurora's sword.</li>
+										</ul>
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="hitreact" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Reacting to Hits</h2>
+							<p>Both Aurora and Melee Enemy characters will play an animation when they are hit, what animation to be played depends on the direction the hit came from.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Hit React Animation</h3>
+									<p>Both Aurora and the Melee Enemy class have 4 hit react animation each, for when they are hit from the Front, Back and their sides.</p>
+									<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5l3eIdbk1MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</section>
+							</div>
+							<div class="features" style="display: flex; flex-direction: row;">
+								<section style="width: 50%;">
+									<span class="icon solid major fa-gem"></span>
+									<h3>How was this done</h3>
+									<a href="images/HitReactSketch.jpg" class="image"><img src="images/HitReactSketch.jpg" alt=""/></a>
+								</section>
+								<section style="padding: 5em 1em 5em 1em;">
+									<p>It was a simple "know where the actor who hit you is standing at" solution. It did not involve physical assets or anything similar that is complex.</p>
+									<p>← This is my sketch of the logic for knowing the direction. I've separated an actor's angle into 8 segments. 
+									If the hit comes from the front, then it is Segments 1 & 8.
+									<ul>
+										<li>FindLookAtRotation is the key function to use here. It gives you the rotation value of an actor from the owner.</li>
+										<li>However, the angle needs to be recalculated in respect to the owner.</li>
+										<li>The class requires at least 4 animation, otherwise the editor will display an error when it tries to play a Hit React animation upon being hit.</li>
+									</ul>
+									</p>
+									<a href="images/HitReactFunction-MD.png" class="image"><img src="images/HitReactFunction-MD.png" alt=""/></a>
+								</section>
+							</div>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3></h3>
+									<p>However, to ensure that designers or integrators have assigned the correct number of animation in the Blueprint, I left a small note on the attribute in the Details panel.
+										This was done with meta specifiers.
+									</p>
+									<a href="images/HitReactAnimationNoteDisplay.png" class="image"><img src="images/HitReactAnimationNoteDisplay.png" alt=""/></a>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="enemyspawn" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Enemy Spawn Manager</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Functionality</h3>
+									<p><ul>
+											<li>Each trigger of the Enemy Spawn Manager by Aurora will spawn <strong>waves</strong> of enemies. A new wave will begin after the last enemy in the current wave is defeated.</li>
+											<ul style="list-style-type: circle;">
+												<li>The straight forward way to do this is to use "Get All Actors of Class" each time an enemy is killed to check if there are anymore enemies left in the level by comparing their numbers. 
+													However, this will probably cause performance issues if let's say there are 100 enemies on the level!</li>
+												<li>What I did was to create a delegate on the Enemy class and broadcast about its death to the Spawn Manager just before it is destroyed. 
+													The Spawn Manager will do the comparing of numbers and determine if the current wave has indeed ended.</li>
+											</ul>
+												<li>The number of waves increases by 1 for every subsequent trigger, up to a specified maximum number. It starts with at least 2 waves.</li>
+												<li>For each wave, a specified number of enemies will be spawned. Together with the number of waves, these numbers are adjustable (user-defined) in the actor's Details panel.</li>
+												<li>Each enemy will spawn on scene with an interval in between spawns.</li>
+										</ul>
+									</p>
+									<img src="images/EnemySpawnManagerFlowchart.png" style="width: 100%;">
+									<!-- <p style="font-size: 0.75em; color:#999999">* Pardon for the lack of flowcharts for this. It was developed on the go when I was coding for this feature as I had a concrete idea of what I should do in mind.
+									There was no conceptualization or documentation stage for this project anyways. 😋</p> -->
+								</section>
+							</div>
+							<div class="features" style="display: flex; flex-direction: row;">
+								<section style="width: 50%;">
+									<a href="images/EnemySpawnManagerDetails.png" class="image"><img src="images/EnemySpawnManagerDetails.png" alt=""/></a>
+									Details panel - Enemy Spawn Manager variables.
+								</section>
+								<section style="padding: 5em 1em 5em 1em;">
+									<ul>
+										<li>Whenever a new wave starts, an environment event sequence is played. This includes the increasing (and then decreasing) of the rotational speed of various revolving actors in the level. 
+											They are communicated to the manager via the use of Event Dispatchers in Blueprint instead.</li>
+										<li>Giving player time to breath, they have to wait for a short duration, determined by the Trigger Interval, before she can trigger the next group of waves. 
+											This, and many other time-based functions in this project, are handled by the World Timer Manager with timer handles in C++.</li>
+									</ul>
+
+								</section>
+							</div>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Blueprint Widgets</h3>
+									<p>
+										<ul>
+											<li>Spawn locations can be specified either by manually inputting the coordinates...</li>
+											<li>Or, using the widgets provided with the Blueprint. They are created using meta specifiers (note though that this type of widget only works with struct variables, eg. vectors).
+										</ul>
+									<a href="images/Editor-SpawnLoactionWidget.png" class="image"><img src="images/Editor-SpawnLoactionWidget.png" alt=""/></a>
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="dash" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Dash Ability</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Inspiration</h3>
+									<p>First of all, I had never played (and still have not played) Paragon, the game of which these Epic Games assets came from.
+										<ul>
+											<li>While I was browsing through the assets from the Paragon Aurora pack, I came across a singular SFX folder that is called "Dash".</li>
+											<li>From instinct, (and probably due to experience from playing games for more than half of my life), 
+												I deduced it could be an ability where Aurora lunges forward over some distance at a high speed. It immediately made me think of Mass Effect!</li>
+										</ul>
+									</p>
+									<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F8ujxBKluGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									<p><ul>
+											<li>I <strong>love</strong> Mass Effect Andromeda! (and the infamous trilogy, and also its Remastered version!) Despite its chaotic, buggy launch, the combat with the variety of abilities is so addictive.
+											The ambience, biomes and world-building makes it so immersive too! Best played on PC with better hardware!</li>
+											<li>Apologies I digress. But the coolest ability in the game, in my opinion, is the Biotics ability called "Charge". 
+											When this ability is activated, the player character will flung herself in the direction she is facing at high speeds. 
+											This is even cooler when the ability is activated while she is in the air.</li>
+											<li>I take some reference from there.</li>
+									</ul></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Implementation - Impulse or Add Force to "Dash"</h3>
+									<p>
+										This was quite an onerous undertaking for me. New to developing in-game abilities in Unreal Engine, I had difficulty deciding what is the best approach for Aurora to "dash". 
+										<ul>
+											<li>After scouring the Internet for a while, I decided to use Impulse at first.</li>
+											<li>However, it feels too instantaneous. On top of tweaking the Impulse value with Velocity Change set to false, it also involves tweaking the Braking Friction and its Factor value in her Character Movement component.</li>
+											<li>After spending hours tweaking these values, I still could not feel it.</li>
+											<ul style="list-style-type: circle;">
+												<li>First of all, no matter what, the dashing still feels too instantaneous. She looked more like teleporting rather than gliding over a distance, which is what I actually wanted.</li>
+												<li>Second, it is so difficult to align with the timing from the provided animation and the special effect tied to that ability.</li>
+											</ul>
+											<li>At some point, a line in the tooltip for the Add Impulse function caught my eye. It mentions about using Add Force. But this has to be done under a Tick function.<br />
+												(On that note, I just want to say UE >=4.2, >=5.0 is so well-documented now, as compared to when I started using it 10 years ago - UE 3.0).
+											</li>
+											<li>Voila! Add Force does work pretty well. I do not had to tweak the Braking Friction at all. And I was able to match the ability with the provided animation and special effect with ease!</li>
+										</ul>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>The Dash Ability Support Class</h3>
+									<p>
+										Do I place her abilities on the Main Character (Aurora) class? Do I create a component class and attach to the Main Character class instead?<br />
+										I decided to just create a new Actor class where *everything* related to this ability is controlled. I felt it was a much easier approach.
+										<ul>
+											<li>I called it the "Support" class because anything that can help to correctly activate and run this ability will go here. My naming sense is open for constructive criticism.</li>
+											<li>This class shall be a persistent actor in the level. It is where it will "get" Aurora when the game begins and attach itself to her in the right orientation.</li>
+											<li>When the Dash ability is activated by player's input, it has to go through a sequence:</li>
+											<ul style="list-style-type: circle;">
+												<li>There is a brief warm-up.</li>
+												<li>It's followed by the actual Force effect, which has her gliding on the floor.</li>
+												<li>Then Aurora brakes with her heel and stops.</li>
+												<li>Cooldown runs before the ability can be activated again.</li>
+											</ul>
+											<li>This sequence of events are controlled with the Timer Manager in C++.</li>
+											<li>The Dash ability does damage on any enemy in its path. It can stun and damage only one enemy.</li>
+											<ul style="list-style-type: circle;">
+												<li>This is intended as I placed a boolean in the collision delegate, so it can only overlap one actor until the ability ends.</li>
+												<li>It also give Impulse to the overlapped enemy. At the moment, it will simple move backwards, regardless of which direction it is facing.</li>
+											</ul>
+										</ul>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Dash Ability Camera</h3>
+									<p>
+										I wanted players to feel like they were not able to catch up with Aurora's Dash.
+										<ul>
+											<li>In Mass Effect Andromeda, when the Charge ability is called, the camera widens its FOV during the warmup. 
+												For Aurora, I felt her warm-up (to match her animation at 1.0 speed) was too fast and does not suit.</li>
+											<li>To achieve this, I created a camera actor and placed it further back behind her. It is attached to the Ability Support class.</li>
+											<li>The camera will then "blend" to this from the Aurora character's own camera, only while she is gliding on the floor, hopefully giving players the feel that she is dashing too fast away from it.</li>
+											<li>However, when the ability is called, the camera will snap to be behind her first.</li>
+											<ul style="list-style-type: circle;">
+												<li>It made sense to me to do it this way, since I wanted to have such a Dash camera from behind her in the beginning.</li>
+												<li>If it was not done this way, it can have undesirable effect on the camera movement, making players even more nauseous. 🤮</li>
+											</ul>
+										</ul>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>What I Want to Improve</h3>
+									<p>
+									<ul>
+										<li>For the Dash ability to be able to stun and damage multiple enemies on its path, rather than just one.</li>
+										<ul style="list-style-type: circle;">
+											<li>I did it this way because there is a tendency for the collision box to overlap the same actor again, especially when the actor Impulses in the same direction Aurora is dashing towards.</li>
+											<li>Instead of a boolean, I can setup an array of FName. Each time the collision overlaps an actor, it takes the Name of it (on the level) and compares with the array (using String Literal) to see if it already overlaps it.</li>
+										</ul>
+										<li>The direction of the enemy to move not just backwards upon being hit by the ability.</li>
+										<ul style="list-style-type: circle;">
+											<li>I can use Find Look At Rotation of the enemy at the Warm-up stage of the ability, and then move it in that direction instead when it is being hit.</li>
+										</ul>
+									</ul>
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="blast" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Blast Ability</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Reference</h3>
+									<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zz5Tb91Upo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									<p>Taking reference from the Nova ability (if my memory serves me right, I think that's what it's called) in Mass Effect Andromeda. So cool, right? 💙</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Implementation</h3>
+									<p><ul>
+										<li>The approach and setup is the same as with the Dash ability.</li>
+										<li>However, this time we have two spheres of collision.</li>
+										<ul style="list-style-type: circle;">
+											<li>The inner sphere is where the actual amount of damage and impulse is applied.</li>
+											<li>The outer sphere acts like a drop-off radius. At the moment, it only applies 0.5 of the actual damage and impulse amount from the inner sphere.</li>
+										</ul>
+										<li>Enemies that are within the maximum radius will be affected by the Blast ability, making them stunned and take tremendous damage.</li>
+									</ul></p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Camera and Visual Feedback</h3>
+									<p>With the player camera setup for Aurora, which is at her eye level and not too far back, it would be quite difficult for players to perceive what has happened when the ability is activated in that short amount of time.	
+									<ul>
+										<li>This is especially when enemies can run towards Aurora from any direction, the enemies that were affected by the Blast ability were often out of view.</li>
+										<li>Widening the FOV will make Aurora, and even the enemies around her, rather small and weird. I did not like the result from it.</li>
+										<li>Rather, I created another camera actor and positioned it such that it will always show the inner radius of the Blast ability. Players should easily see the enemies that were within that radius.</li>
+										<li>There should also be visual feedback to indicate which enemies are within that radius. Players should easily perceive this while in the Warm-up stage, just before the "blast" itself is activated.
+											<ul style="list-style-type: circle;">
+												<li>Finding the right particle effects for this was not easy, I was not able to find the appropriate one.</li>
+												<li>So I heavily tweaked one Niagara particle system from a free pack (RPG Effects) to get what I needed.</li>
+											</ul>
+									</ul>
+									<a href="images/Niagara_Blast.png" class="image"><img src="images/Niagara_Blast.png" alt=""/></a>
+									</p>
+									<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4w2LZbxDXvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="headgears" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>The Crown and The Halo</h2>
+							<p></p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Inspiration</h3>
+									<p>There was an episode in Big Bang Theory where Amy was upset with Sheldon about something and was adamant that no amount of gifts or jewelry will uplift her 
+										but her mood quickly changed 180 to immense jubilee when Sheldon bought her a Tiara on advice from Penny.<br />
+										I thought, "hmm... a tiara on Aurora will be so cool" 😆.
+										<ul>
+											<li>Scavenging the internet for a free 3D model of a tiara, I came across this crown instead (image below).</li>
+											<li>After reducing its poly count in Maya, I did not like how it looked on her. So I re-modelled to make it look like an actual tiara instead.</li>
+										</ul>
+									</p>
+									<p style="font-family: Arial, Helvetica, sans serif; font-size: 0.75em;">
+										<a href="images/CrownBefore.png" class="image"><img src="images/CrownBefore.png" alt=""/></a><br />
+										The original Crown model, a free 3D model from the internet, after reduced poly count.
+									</p>
+									<p style="font-family: Arial, Helvetica, sans serif; font-size: 0.75em;">
+										<a href="images/CrownAfter.png" class="image"><img src="images/CrownAfter.png" alt=""/></a><br />
+										The "Crown" after a re-model in Maya 2020.
+									</p>
+									<p>
+										<a href="images/HeadgearOnAurora.png" class="image"><img src="images/HeadgearOnAurora.png" alt=""/></a><br />
+										Kawaii! 😄❤️
+									</p>
+									<p>
+										<ul>
+											<li>The level I created has these "wing" sections, the result of inspiration from the bridge in God of War (see the <a href="#leveldesign">Level Creation</a> section). I had not thought what it would be for.</li>
+											<li>So naturally displaying the headgears there would be a good idea. But then I need one more headgear.</li>
+											<li>The Halo came easily to mind. It would be so easy to make. Furthermore, I came across a jaw-dropping, awesome-looking material from the Props pack, that is appropriate for the Halo model.</li>
+										</ul>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Aurora Stats Buffs and Nerfs</h3>
+									<p>When Aurora dons a headgear, there will be some buffs and a nerf to her combat stats.
+										<ul>
+											<li><strong>Crown of Queen Aurora</strong></li>
+											<ul style="list-style-type: circle;">
+												<li>Extend Sword Reach - <i style="font-size: 0.9em; color:#ffffff99;">Behind the scenes, the length of the sword collision box is extended by factor of 1.5. This also adds the ability to damage even enemies behind an enemy.
+													I wanted to place an additional particle effect to the end of the sword to indicate this but I figured the change of the sword trail should be enough.</i></li>
+												<li>Increased Sword Damage Attack Speed by 25% - <i style="font-size: 0.9em; color:#ffffff99;">I had setup a separate montage and trim the end of all 3 attack animation. 
+													Upon donning this headgear, the attack animation will play from this montage instead.</i></li>
+												<li>2 more Health fragments will always spawn from Enemy's death - 
+													<i style="font-size: 0.9em; color:#ffffff99;">Simply tell the Enemy actor, which Aurora already got from sword collision, to spawn more fragments. I had to add 1 more argument to pass that information.</i></li>
+												<li>(Curse) Increase Damage taken</li>
+											</ul>
+											<li><strong>Halo of Paragon's Angel</strong></li>
+											<ul style="list-style-type: circle;">
+												<li>Decreased Energy usage per Ability call</li>
+												<li>Shorter Exhaustion Recovery Duration - <i style="font-size: 0.9em; color:#ffffff99;">Actually, simply increase the recovery rate. This avoids having to adjust the related UI real-time, 
+													have I decided to reduce the Minimum Threshold (the gap in the Energy Bar) instead for example.</i></li>
+												<li>2 more Energy fragments will always spawn from Enemy's death</li>
+												<li>(Curse) Decreased Sword Damage</li>
+											</ul>
+											The final decisions on the buffs and nerfs above are made based with the thought that I do not have to manipulate / adjust the UI in real-time. This saved a good amount of time.
+										</ul>
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Headgear Display and Area Barriers</h3>
+									<p>The headgear display and the barriers that go up when enemies are spawned, are Blueprint classes of their own. 
+										The headgears communicate with these objects in the level via its dynamic multicast delegates so I can assign and broadcast them not only in C++ but also in Blueprints of different, multiple objects!
+										<ul>
+											<li>The barrier guarding the Headgear Display will not go up if Aurora has equipped that related headgear at least once.</li>
+											<li>The Headgear Display will "de-activate" when Aurora equips the headgear on that display.</li>
+											<li>If Aurora equips a headgear on display, while she already has equipped the other headgear, 
+												this other headgear will be put back to its display. That display will "re-activate".</li>
+											<li>The "screen" that comes up for each display was a <strong>design solution</strong>. Initially for afar, players would not be able to discern anything because it was too small.</li>
+										</ul>
+										<a href="images/HeadgearWithNoScreen.png" class="image"><img src="images/HeadgearWithNoScreen.png" alt=""/></a><br />
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+					<section id="lessons" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Lessons Learnt</h2>
+							<div class="features">
+								<section>
+									<ul>
+										<li>When developing a new feature, it's best to test it out on Blueprint first before committing it to C++. It takes time to build/compile a project 
+											and can be frustrating at times when i have to compile at every iteration.</li>
+										<li>On the other hand, if I intend to develop a new feature on Blueprint, create the C++ class of it first. 
+											Because you never know if you may want to commit it to C++ later on. This happened to me a few times. Then, I encountered issues when I try to create the C++ class after.</li>
+										<li>No harm in exposing ALL (this can be debated) public variables in a class to Blueprint, unless you're absolutely, very certain it is not going to be used elsewhere. 
+											Again, compiling projects is time-consuming.</li>
+										<li>I have to be more careful in using anim notifies in montages. I would only use it when I know for certain the function WILL be called at that stage of animation. 
+											I came across many a confusing bug that is caused by the animation being interrupted before the anim notify is called.</li>
+									</ul>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="../index.html" class="button">Back to Main Page</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CONTACT -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get In Touch</h2>
+							<p>I can be contacted via email.
+							<a href="mailto:181mdelamore@gmail.com">181mdelamore@gmail.com</a>
+							</p>
+							<h2>Social</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span> GitHub</a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span> LinkedIn</a></li>
+								</ul>
+<!--						<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span><br />
+											<br />
+											</span>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(+65) 8157-2695</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div> -->
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Muhsen Delamore. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP : Hyperspace</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
